@@ -1,0 +1,1 @@
+emcc hello.c -Os -s WASM=1 -s SIDE_MODULE=1 -s EXPORTED_FUNCTIONS='["_fib"]' -o hello.wasm

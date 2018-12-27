@@ -1,0 +1,25 @@
+<html>
+<head>
+<script>
+(async () => {
+  const config = {
+    env: {
+        __memory_base: 0,
+        _table_base: 0,
+        memory: new WebAssembly.Memory({
+            initial: 256,
+        }),
+        table: new WebAssembly.Table({
+            initial: 0,
+            element: 'anyfunc',
+        }),
+    }
+  }
+  const fetchPromise = fetch('hello.wasm');
+  const {instance} = await WebAssembly.instantiateStreaming(fetchPromise, config);
+  const result = instance.exports._fib();
+  console.log(result);
+})();
+</script>
+</head>
+</html>
