@@ -1,0 +1,16 @@
+main.o: main.c \
+  /Users/martinakraus/Dev/emsdk/emscripten/1.38.21/system/include/libcxx/stdio.h \
+  /Users/martinakraus/Dev/emsdk/emscripten/1.38.21/system/include/libcxx/__config \
+  /Users/martinakraus/Dev/emsdk/emscripten/1.38.21/system/include/libc/stdio.h \
+  /Users/martinakraus/Dev/emsdk/emscripten/1.38.21/system/include/libc/features.h \
+  /Users/martinakraus/Dev/emsdk/emscripten/1.38.21/system/include/libc/bits/alltypes.h
+
+/Users/martinakraus/Dev/emsdk/emscripten/1.38.21/system/include/libcxx/stdio.h:
+
+/Users/martinakraus/Dev/emsdk/emscripten/1.38.21/system/include/libcxx/__config:
+
+/Users/martinakraus/Dev/emsdk/emscripten/1.38.21/system/include/libc/stdio.h:
+
+/Users/martinakraus/Dev/emsdk/emscripten/1.38.21/system/include/libc/features.h:
+
+/Users/martinakraus/Dev/emsdk/emscripten/1.38.21/system/include/libc/bits/alltypes.h:
