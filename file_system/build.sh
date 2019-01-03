@@ -1,0 +1,1 @@
+emcc filesystem.cpp -o hello.html --preload-file tests/hello_world_file.txt
