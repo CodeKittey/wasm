@@ -1,7 +1,9 @@
 #ifdef __EMSCRIPTEN__
 #include <emscripten.h>
 #endif
+
 #include <stdio.h>
+
 int main()
 {
     FILE *file = fopen("tests/hello_world_file.txt", "rb");

@@ -19,7 +19,7 @@ int multiply(int a, int b)
 
 float divide(int a, int b)
 {
-    return (float)(a / b);
+    return (float) (a / b);
 }
 
 int square(int a)
@@ -50,8 +50,7 @@ int factorial(int a)
     if (a == 0)
     {
         return 1;
-    }
-    else
+    } else
     {
         return a * factorial(a - 1);
     }
@@ -106,9 +105,7 @@ int main()
             result = add(a, b);
 
             cout << "Sum is: " << result << endl;
-        }
-
-        else if (choice == 's' || choice == 'S')
+        } else if (choice == 's' || choice == 'S')
         {
             cout << "Please enter two numbers, separated by spaces, to be subtracted: ";
             cin >> a >> b;
@@ -116,9 +113,7 @@ int main()
             result = subtract(a, b);
 
             cout << "Difference is: " << result << endl;
-        }
-
-        else if (choice == 'm' || choice == 'M')
+        } else if (choice == 'm' || choice == 'M')
         {
             cout << "Please enter two numbers, separated by spaces, to be multiplied: ";
             cin >> a >> b;
@@ -126,9 +121,7 @@ int main()
             result = multiply(a, b);
 
             cout << "Product is: " << result << endl;
-        }
-
-        else if (choice == 'd' || choice == 'D')
+        } else if (choice == 'd' || choice == 'D')
         {
             cout << "Please enter two numbers, separated by spaces, to be divided: ";
             cin >> a >> b;
@@ -136,9 +129,7 @@ int main()
             result = divide(a, b);
 
             cout << "Quotient is: " << result << endl;
-        }
-
-        else if (choice == 'q' || choice == 'Q')
+        } else if (choice == 'q' || choice == 'Q')
         {
             cout << "Please enter number to be squared: ";
             cin >> a;
@@ -146,9 +137,7 @@ int main()
             result = square(a);
 
             cout << "Square of " << a << " is: " << result << endl;
-        }
-
-        else if (choice == 'c' || choice == 'C')
+        } else if (choice == 'c' || choice == 'C')
         {
             cout << "Please enter number to be cubed: ";
             cin >> a;
@@ -156,9 +145,7 @@ int main()
             result = cube(a);
 
             cout << "Cube of " << a << " is: " << result << endl;
-        }
-
-        else if (choice == 'r' || choice == 'R')
+        } else if (choice == 'r' || choice == 'R')
         {
             cout << "Please enter a number to find its square root: ";
             cin >> a;
@@ -166,9 +153,7 @@ int main()
             result = sqroot(a);
 
             cout << "The square root of " << a << " is: " << result << endl;
-        }
-
-        else if (choice == 'f' || choice == 'F')
+        } else if (choice == 'f' || choice == 'F')
         {
             cout << "Please enter a number to determine its factorial: ";
             cin >> a;
@@ -176,9 +161,7 @@ int main()
             result = factorial(a);
 
             cout << "Factorial of " << a << " is: " << result << endl;
-        }
-
-        else if (choice == 'g' || choice == 'G')
+        } else if (choice == 'g' || choice == 'G')
         {
             cout << "Please enter two numbers, separated by spaces, to find their GCD: ";
             cin >> a >> b;
@@ -186,9 +169,7 @@ int main()
             result = gcd(a, b);
 
             cout << "The greatest common denominator of " << a << " and " << b << " is: " << result << endl;
-        }
-
-        else if (choice == 'l' || choice == 'L')
+        } else if (choice == 'l' || choice == 'L')
         {
             cout << "Please enter two numbers, separated by spaces, to find their LCM: ";
             cin >> a >> b;
@@ -196,15 +177,11 @@ int main()
             result = lcm(a, b);
 
             cout << "The least common multiple of " << a << " and " << b << " is: " << result << endl;
-        }
-
-        else if (choice == 'e' || choice == 'E')
+        } else if (choice == 'e' || choice == 'E')
         {
             cout << "Goodbye!" << endl;
             break;
-        }
-
-        else
+        } else
         {
             cout << "Invalid option. Please try again." << endl;
             continue;

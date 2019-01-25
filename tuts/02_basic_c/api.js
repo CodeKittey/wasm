@@ -2,8 +2,8 @@
 
 var wasmModule = new WebAssembly.Module(wasmCode);
 var wasmInstance = new WebAssembly.Instance(wasmModule, {
-  env: {
-    consoleLog: num => console.log(num)
-  }
+    env: {
+        consoleLog: num => console.log(num)
+    }
 });
 log(wasmInstance.exports.getSqrt(9));

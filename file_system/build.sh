@@ -1,1 +1,2 @@
-emcc filesystem.cpp -o hello.html --preload-file tests/hello_world_file.txt
+emcc owl.c -o hello.html -O2 -s USE_SDL=2 -s USE_SDL_IMAGE=2  -s SDL2_IMAGE_FORMATS='["png"]' -s ALLOW_MEMORY_GROWTH=1 --preload-file assets/owl.png
+# emcc filesystem.cpp -o hello.html --embed-file tests/hello_world_file.txt
